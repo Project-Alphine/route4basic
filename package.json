@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "esbuild --config=esbuild.config.mjs",
-    "lint": "eslint --config=.eslintrc.json src/"
+    "lint": "eslint --config=.eslintrc.json src/",
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
