@@ -1,0 +1,33 @@
+{
+  "name": "basic-route",
+  "version": "1.0.0",
+  "description": "router for basic vanilla",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild --config=esbuild.config.mjs",
+    "lint": "eslint --config=.eslintrc.json src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-Alphine/basic-route.git"
+  },
+  "keywords": [
+    "router",
+    "basic router"
+  ],
+  "author": "arsole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Project-Alphine/basic-route/issues"
+  },
+  "homepage": "https://github.com/Project-Alphine/basic-route#readme",
+  "dependencies": {
+    "esbuild": "0.17.10",
+    "page": "^1.11.6",
+    "vite": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
+}
