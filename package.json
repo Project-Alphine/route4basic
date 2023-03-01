@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "esbuild --config=esbuild.config.mjs",
+    "build": "esbuild esbuild.config.mjs",
     "lint": "eslint --config=.eslintrc.json src/",
     "test": "node test/test.js"
   },
@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/Project-Alphine/basic-route#readme",
   "dependencies": {
-    "esbuild": "0.17.10",
     "page": "^1.11.6",
     "vite": "^4.1.4"
   },
   "devDependencies": {
+    "esbuild": "^0.17.10",
     "eslint": "^8.35.0"
   }
 }
