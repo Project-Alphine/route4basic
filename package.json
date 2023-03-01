@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "esbuild esbuild.config.mjs",
-    "lint": "eslint --config=.eslintrc.json src/",
+    "build": "esbuild ./src/index.js --bundle --minify --outfile=./dist/mainBuild.min.js --platform=node --sourcemap --watch",
+    "lint": "eslint --config=.eslintrc.cjs src/",
     "test": "node test/test.js"
   },
   "repository": {

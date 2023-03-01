@@ -6,13 +6,13 @@ export default {
     path.resolve(__dirname , './src/index.js'),
     path.resolve(__dirname, 'test/test.js')
 ],
-  outfile: path.resolve(__dirname ,'./dist/mainBuild.min.js'),
+  outfile: path.resolve(__dirname, 'dist/mainBuild.min.js'),
   minify: true,
   bundle: true,
   plugins: [nodeResolvePlugin({ extensions: ['.js'] })],
   sourcemap: true,
   watch: process.argv.includes('--watch'),
-  logLevel: 'info',
+  logLevel: 'verbose',
 }
 
   /**
