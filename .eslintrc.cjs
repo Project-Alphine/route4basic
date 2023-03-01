@@ -11,5 +11,11 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "semi": "error",
+        "quotes": ["error", "single"],
+        "indent": ["error", 2],
+        "no-unused-vars": "warn",
+        "no-undef": "warn",
+        "no-console": "warn"
     }
 }
