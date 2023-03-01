@@ -11,12 +11,13 @@ export default {
   bundle: true,
   plugins: [nodeResolvePlugin({ extensions: ['.js'] })],
   sourcemap: true,
+  watch: process.argv.includes('--watch'),
+  logLevel: 'info',
+}
+
   /**
    * define: {
    *'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
    *},
    *
    **/
-  watch: process.argv.includes('--watch'),
-  logLevel: 'info',
-};
