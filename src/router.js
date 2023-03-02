@@ -1,21 +1,29 @@
 import page from "page";
 
 const router = {
+  routes: {},
   get: (path, handler) => {
-    page(path, handler);
+    router.routes[path] = { method: 'GET', handler };
   },
   post: (path, handler) => {
-    page(path, { method: 'POST' }, handler);
+    router.routes[path] = { method: 'POST', handler };
   },
   put: (path, handler) => {
-    page(path, { method: 'PUT' }, handler);
+    router.routes[path] = { method: 'PUT', handler };
   },
   delete: (path, handler) => {
-    page(path, { method: 'DELETE' }, handler);
+    router.routes[path] = { method: 'DELETE', handler };
   },
   run: () => {
-    page.start();
+    page();
+  },
+  validateParams: (route, params) => {
+    // Implementation goes here
+  },
+  add: (path, method, handler) => {
+    router.routes[path] = { method, handler };
   }
 };
+
 
 export default router;
